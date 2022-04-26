@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Bootstrap</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="form-cont col-8 align-self-center col-md-6 col-sm-4">
+        <form action="" method="post" class="align-self-center">
+          <h2>Formuliario de Registro</h2>
+          <div class="row" id="form-row">
+            <div class="mb-3 opciones col-5">
+              <label for="nombre" class="form-label titulos">Nombre Completo:</label>
+              <input type="text">
+              <div class="form-text">Ingrese su nombre completo</div>
+            </div>
+            <div class="mb-3 opciones col-5">
+              <label for="fechaNac" class="form-label titulos">Fecha de Nacimiento:</label>
+              <input type="text">
+              <div class="form-text">Ingrese la fecha de su nacimiento</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 opciones col-5">
+              <label for="dui" class="form-label titulos">DUI:</label>
+              <input type="text">
+              <div class="form-text">Ingrese su número de DUI, también ingrese el "-". Ejemplo: 12345678-9</div>
+            </div>
+            <div class="mb-3 opciones col-5">
+              <label for="genero" class="form-label titulos">Género:</label>
+              <div class="generos">
+                <input type="radio" name="masculino" value="masculino" class="form-check-input">
+                <label for="masculino" class="form-check-label">Masculino</label>
+                <input type="radio" name="femenino" value="femenino" class="form-check-input">
+                <label for="femenino" class="form-check-label">Femenino</label>
+              </div>
+              <div class="form-text">Ingrese su género</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 opciones col-5">
+              <label for="correo" class="form-label titulos">Correo Electrónico:</label>
+              <input type="email">
+              <div class="form-text">Ingrese su correo electrónico. Ejemplo: correo@ejemplo.com</div>
+            </div>
+            <div class="mb-3 opciones col-5">
+              <label for="carnet" class="form-label titulos">Carnet de Estudiante:</label><input type="text">
+              <div class="form-text">Ingrese su número de Carnet de Estudiante.</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 opciones col-5">
+              <label for="telefono" class="form-label titulos">Número de Teléfono:</label>
+              <input type="text">
+              <div class="form-text">Ingrese su número de teléfono, tomando en cuenta el "-", ejemplo: 7896-1234</div>
+            </div>
+            <div class="mb-3 opciones col-5">
+              <label for="direccion" class="form-label titulos">Dirección:</label>
+              <input type="textarea">
+              <div class="form-text">Ingrese su dirección</div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary mb-3" id="enviar">Enviar Formulario</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
