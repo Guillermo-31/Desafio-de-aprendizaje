@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-}
-
 h2 {
   display: flex;
   justify-content: center;
@@ -30,7 +27,7 @@ h2,
   padding: 0.5rem;
   /*border: rgb(6, 99, 143) outset 0.7rem;*/
   border-radius: 10px;
-  box-shadow: rgb(3, 3, 3) 8px 8px 2px;
+  box-shadow: rgb(61, 61, 61) 8px 8px 2px;
 }
 
 .opciones {
@@ -40,4 +37,50 @@ h2,
 #enviar {
   display: flex;
   margin: auto;
+}
+
+.contNav {
+  position: absolute;
+  margin: 0;
+}
+
+.barraNav {
+  display: flex;
+}
+
+.listNav {
+  display: flex;
+  margin-right: 50rem;
+  text-decoration: none;
+  list-style: none;
+  border-bottom-left-radius: 10px;
+  border-bottom: inset rgb(61, 61, 61) 0.35rem;
+  border-left: inset rgb(61, 61, 61) 0.35rem;
+  box-shadow: rgb(61, 61, 61) -7px 7px 8px;
+  position: absolute;
+  padding: 0;
+  margin-top: -0.8rem;
+  margin-left: 62.4rem;
+  z-index: 10;
+  background: black;
+}
+
+.listNav li {
+  padding: 0.8rem;
+}
+
+.listNav li:first-of-type {
+  margin-right: 0.8rem;
+}
+
+.listNav li:hover {
+  transition: all 500ms;
+  background: rgb(117, 115, 115);
+}
+
+.listNav li a {
+  font-size: 1.3rem;
+  margin: 0;
+  text-decoration: none;
+  color: white;
 }

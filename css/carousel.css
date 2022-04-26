@@ -1,7 +1,64 @@
-*{
-    padding: auto;
-    margin: auto;
-    margin-top: 20px;
-    background: black;
+* {
+  padding: auto;
+  margin: auto;
+  margin-top: 20px;
+  background: black;
+  box-sizing: border-box;
 }
- 
+
+.container {
+  background: black;
+  width: auto;
+  height: auto;
+}
+
+h1 {
+  color: aliceblue;
+}
+
+.contNav {
+  position: absolute;
+  margin-top: -7.6rem;
+  margin-left: 70rem;
+}
+
+.barraNav {
+  display: flex;
+}
+
+.listNav {
+  display: flex;
+  margin-right: 50rem;
+  text-decoration: none;
+  list-style: none;
+  border-bottom-left-radius: 10px;
+  border-bottom: inset rgb(102, 102, 102) 0.35rem;
+  border-left: inset rgb(102, 102, 102) 0.35rem;
+  box-shadow: rgb(102, 102, 102) -7px 7px 8px;
+  position: absolute;
+  padding: 0;
+  z-index: 10;
+}
+
+.listNav li {
+  padding: 0.8rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+.listNav li:first-of-type {
+  margin-right: 0.8rem;
+}
+
+.listNav li:hover {
+  transition: all 500ms;
+  background: rgb(121, 117, 117);
+}
+
+.listNav li a {
+  font-size: 1.3rem;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  background: none;
+}
